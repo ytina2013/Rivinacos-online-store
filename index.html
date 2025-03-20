@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivinacos - Интернет-магазин косметики</title>
+  <style>This text is in Georgia font.
+ /* Основные стили */
+    body { margin: 0; font-family: Arial, sans-serif; background: #e3f2fd }
+    header { background: #fff; padding: 20px; text-align: center; border-bottom: 1px solid #ddd; }
+    nav { background: #f3e5f5 /* Light Lavender */; color: #fff; padding: 10px; text-align: center; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    .container { padding: 20px; }
+    h2 { color: #333; }
+  
+    /* Каталог товаров */
+    .product { border: 1px solid #ddd; border-radius: 5px; padding: 10px; margin: 10px; width: calc(33% - 40px); float: left; background: #fff; box-sizing: border-box; }
+    .product img { width: 100%; border-bottom: 1px solid #ddd; margin-bottom: 10px; }
+    .product h3 { margin: 10px 0; font-size: 1.1em; }
+    .clear { clear: both; }
+    /* Форма заказа */
+    .order-form { max-width: 400px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; background: #fff; }
+    .order-form input, .order-form textarea, .order-form select { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 3px; }
+    .order-form button { padding: 10px 20px; background: #333; color: #fff; border: none; border-radius: 3px; cursor: pointer; }
+    /* Контакты */
+    footer { background: #fff; text-align: center; padding: 10px; border-top: 1px solid #ddd; margin-top: 20px; }
+    .payment-methods ul { list-style: none; padding: 0; }
+    .payment-methods li { margin-bottom: 5px; }
+    /* Адаптив */
+    @media (max-width: 768px) {
+      .product { width: calc(50% - 40px); }
+    }
+    @media (max-width: 480px) {
+      .product { width: 100%; margin: 10px 0; }
+      nav a { display: block; margin: 5px 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Заголовок сайта -->
+  <header>
+    <h1>Rivinacos</h1>
+    <p>Интернет-магазин косметики премиум брендов</p>
+  </header>
+  
+  <!-- Навигация -->
+  <nav>
+    <a href="#home">Главная</a>
+    <a href="#catalog">Каталог</a>
+    <a href="#order">Заказ</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  
+  <!-- Главная страница -->
+  <section id="home" class="container">
+    <h2>Добро пожаловать!</h2>
+    <p>В нашем магазине представлены косметические бренды: The History of Whoo, OHUI, SU:M, Amuse, Enprani. Ознакомьтесь с ассортиментом и оформите заказ прямо на сайте.</p>
+  </section>
+  
+  <!-- Каталог товаров -->
+  <section id="catalog" class="container">
+    <h2>Каталог товаров</h2>
+    
+    <!-- Продукт 1 -->
+    <div class="product">
+
+      <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20240329_47%2F17117138432899y1tn_PNG%2F39016527099386512_293048281.png&type=sc960_832"width="400" height="400" alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p> Cheongidan Special Set</p>
+      <p><strong>Цена:</strong> $75</p>
+    </div>
+    
+    <!-- Продукт 2 -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/813BWOerqnL._SL1500_.jpg" alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Cheonyuldan Hwayul Special Edition Set</p>
+      <p><strong>Цена:</strong> $85</p>
+    </div>
+    
+    <!-- Продукт 3 -->
+    <div class="product">
+      <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20240210_244%2F1707493026822z4gfS_JPEG%2F108628861651088113_615993551.jpg&type=a340" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Bichup Self-Generating Essence (50ml)</p>
+      <p><strong>Цена:</strong> $48</p>
+    </div>
+    
+    <!-- Продукт 4 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/HwcAAeSwNYNn0YNR/s-l960.webp""width="400" height="400" alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Cheonyuldan Hwayul Signature 3-Piece Set</p>
+      <p><strong>Цена:</strong> $108</p>
+    </div>
+    
+    <!-- Продукт 5 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/jbkAAOSwB45nsI0l/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>The First Moisture Essence (90ml)</p>
+      <p><strong>Цена:</strong> $36</p>
+    </div>
+    
+    <!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/s~MAAOSwGRZnEmdr/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Gong Jin Hyang Brightening Emulsion 110ml</p>
+      <p><strong>Цена:</strong> $28</p>
+    </div>
+    
+ <!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/30oAAOSwg-tnk0qQ/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Gongjinhyang Facial Gentle Foaming Foam Cleanser</p>
+      <p><strong>Цена:</strong> $25</p>
+    </div>
+
+<!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/lWQAAOSw8KFnEmQ2/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Cheongidan Radiant Rejuvenating Emulsion</p>
+      <p><strong>Цена:</strong> $43</p>
+</div>
+
+<!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/YhUAAOSwUK1nk07D/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Cheongidan Illuminating Refining Essence Special Set</p>
+      <p><strong>Цена:</strong> $110</p>
+    </div>
+
+<!-- Продукт 5 -->
+    <div class="product">
+      <img src="https://thewhoo.com/web/product/small/202411/aff0e05c3b6a34efb4b6205e407fb0e8.jpg" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Cheongidan Hwahyun Balancer</p>
+      <p><strong>Цена:</strong> $38</p>
+    </div>
+
+
+<!-- Продукт 5 -->
+    <div class="product">
+      <img src="https://whooroyalart.cafe24.com/web/upload/NNEditor/20231214/51106051.jpg" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Ultimate Rejuvenative Emulsion</p>
+      <p><strong>Цена:</strong> $48</p>
+    </div>
+
+<!-- Продукт 5 -->
+    <div class="product">
+      <img src="https://img.beautydome.co.kr/_data/product/202408/13/69c115a000d34a8c93fb0ce1eae65233.jpg" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p> Gongjinhyang whitening set of 3</p>
+      <p><strong>Цена:</strong> $69</p>
+    </div>
+
+<!-- Продукт 5 -->
+    <div class="product">
+      <img src="https://img.beautydome.co.kr/_data/product/202503/18/53e4fd7834407bcdb572d262db1294fb.jpg" "width="400" height="400"alt="Продукт">
+      <h3>OHUI</h3>
+      <p>The First Geniture Signature 3-Set & The First Signature Edition</p>
+      <p><strong>Цена:</strong> $78</p>
+    </div>
+
+<!-- Продукт 5 -->
+    <div class="product">
+      <img src="https://img.beautydome.co.kr/_data/product/202503/18/e9f0096e8eb051d45dc48488716ef166.jpg" "width="400" height="400"alt="Продукт">
+      <h3>The History of Whoo</h3>
+      <p>Bichup 3-Step Special Gift Set</p>
+      <p><strong>Цена:</strong> $90</p>
+    </div>
+
+<!-- Продукт 5 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/l1UAAOSwWzJnVUm1/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>OHUI</h3>
+      <p>The First Geniture 2-piece set</p>
+      <p><strong>Цена:</strong> $50</p>
+    </div>
+
+
+<!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://img.beautydome.co.kr/_data/product/202407/25/898ee5ead0471ea8aa642b0517405dd8.jpg" "width="400" height="400"alt="Продукт">
+      <h3>OHUI</h3>
+      <p>Ultimate Cover Moisture Cushion 15g (original) + 15g (refill)</p>
+      <p><strong>Цена:</strong> $17</p>
+</div>
+
+<!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/pEkAAOSwnDln0O4S/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>OHUI</h3>
+      <p>Ultimate Cover Lifting Cushion (15g + 15g Refill)01 Milk Beige </p>
+      <p><strong>Цена:</strong> $20</p>
+</div>
+
+<!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://img.beautydome.co.kr/_data/product/202502/19/233a55a4fc373c98f58fb242c11e982f.jpg" "width="400" height="400"alt="Продукт">
+      <h3>OHUI</h3>
+      <p>Prime Advancer Special 2-Piece Set</p>
+      <p><strong>Цена:</strong> $48</p>
+</div>
+
+<!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://img.beautydome.co.kr/_data/product/202502/19/1d221d9f69fcf025bde8fb83f6805fa1.jpg" "width="400" height="400"alt="Продукт">
+      <h3>OHUI</h3>
+      <p>Ultimate Cover Stick Foundation</p>
+      <p><strong>Цена:</strong> $22</p>
+</div>
+
+<!-- Продукт 6 -->
+    <div class="product">
+      <img src="https://i.ebayimg.com/images/g/x14AAOSw04pm7A5j/s-l1600.webp" "width="400" height="400"alt="Продукт">
+      <h3>OHUI</h3>
+      <p>Prime Advancer Skin Care Set</p>
+      <p><strong>Цена:</strong> $54</p>
+</div>
+
+    <div class="clear"></div>
+  </section>
+  
+  
+        
+       
+  
+        <h3>Выберите способ оплаты</h3>
+        <div class="payment-methods">
+          <ul>
+            <li><input type="radio" id="bank" name="payment" value="bank" required> <label for="bank">Банковский перевод kookmin bank 900901-01-675416 이나영(rivicat) swift code : CZNBKRSEXXX</label></li>
+            <li><input type="radio" id="payoneer" name="payment" value="payoneer"> <label for="payoneer">Payoneer</label></li>
+          </ul>
+        </div>
+        
+     
+  <!-- Контакты -->
+  <section id="contacts" class="container">
+    <h2>Контакты</h2>
+    <p>WhatsApp:00821082275452 <a href="https://wa.me/00821082275452" target="_blank">1234567890</a></p>
+    <p>Email: <a href="mailto:example@email.com">nl605203@gmail.com</a></p>
+  </section>
+  
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2025 Rivinacos. Все права защищены.</p>
+  </footer>
+</body>
+</html>
+
+
+
